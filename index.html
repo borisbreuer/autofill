@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./autofill.css">
+  <script src="./autofill.js"></script>
+  <script src="./autofill-data.js"></script>
+
+</head>
+<body>
+
+  <input placeholder="Autofill ..." autocomplete="off" type="text" id="autofill"/>
+
+  <script defer>
+    const autofill = new Autofill(
+      "#autofill", 
+      autofillData, 
+      opt = { 
+        searchSet: ["name", "rating"] 
+      }
+    );
+  </script>
+</body>
+</html>
